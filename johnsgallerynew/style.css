@@ -1,0 +1,136 @@
+	
+	/*Priorities/Style-ID-Class-Element=a-b-c-d=0-0-0-0*/
+    body{
+     color:rgb(235, 221, 221);
+     background:url(Haru4.jpg)no-repeat;
+     background-size:cover;
+     background-position:center;
+     padding: 0px;      
+     font-family: Arial;
+
+     	}
+     	ul{
+     		margin: 0px;
+     		padding: 0px;
+     		list-style-type:none; 
+     	}
+     
+     	ul li{
+
+     		float: left;
+     		width: 200px;
+     		height: 40px;
+     		background-color: black;
+     		opacity: .6;
+     		line-height: 40px;
+     		text-align:center;
+     		font-size:20px;	
+     		margin-right: 4px;
+     		border-radius:10px;  
+     	}
+     	ul li a{
+     		text-decoration: none;
+     		color: white;
+     		display: block;
+     	}
+    	ul li a:hover{
+      		background-color: green;
+    	}
+    	ul li ul li{
+    		display: none;
+    	}
+    	ul li:hover ul li{
+    		display: block;
+    	}
+   
+.ram{
+        float:right;
+        width:33.3%%;   
+        padding:10px;
+        border-radius:5;
+    }       
+    /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: red;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+body {margin:0}
+
+.icon-bar {
+  width: 90px;
+  background-color: #555;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
