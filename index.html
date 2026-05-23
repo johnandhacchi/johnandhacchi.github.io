@@ -1,119 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "WebSite",
- "name": "Ｊｏｈｎ＆Ｈａｃｃｈｉなんでも練習場",
- "url": "https://www7b.biglobe.ne.jp/~johnandhacchi/index.html"
-}
-</script>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ＪｏｈｎとＨａｃｃｈｉのカメラ、旅行、スペイン語などなどの練習場">
-<link rel="canonical" href="www7b.biglobe.ne.jp/~johnandhacchi/">
 <title>Ｊｏｈｎ＆Ｈａｃｃｈｉなんでも練習場</title>
+
 <style>
-#headline {
- text-align: center
-}
-.johncolor {/*クラス名johncolorに対して*/
-  color: DodgerBlue;/*色をDodgerBlueに*/
-}
-.hacchicolor {
-  color: magenta
-}
+#headline { text-align: center; }
+.johncolor { color: DodgerBlue; }
+.hacchicolor { color: magenta; }
 #menu {
   width: 60%;
-  margin-right:auto; margin-left:auto;
+  margin: 0 auto;
   font-size: 20px;
-  font-weight: bold;/*文字を太字に*/
+  font-weight: bold;
 }
-body {
-  background: #98FB98;
-}
-p {
-  font-size: 18px;
-}
-ul, ol {
-  padding: 0;
-  position: relative;
-}
-
+body { background: #98FB98; }
+p { font-size: 18px; }
+ul, ol { padding: 0; }
 ul li, ol li {
   color: #2d8fdd;
-  border-left: solid 6px #2d8fdd;/*左側の線*/
-  background: #f1f8ff;/*背景色*/
-  margin-bottom: 1.0px;/*下のバーとの余白*/
-   line-height: 1.0;
+  border-left: solid 6px #2d8fdd;
+  background: #f1f8ff;
+  margin-bottom: 1px;
+  line-height: 1.0;
   padding: 0.5em;
-  list-style-type: none!important;/*ポチ消す*/
+  list-style-type: none!important;
 }
-#count {
- text-align: center
-}
-</style> 
+#count { text-align: center; margin-top: 10px; }
+</style>
 </head>
-<body><!-- ブラウザに表示部-->
-  <div id="headline">
+
+<body>
+
+<div id="headline">
   <h1><span class="johncolor">Ｊｏｈｎ</span>＆<span class="hacchicolor">Ｈａｃｃｈｉ</span>なんでも練習場</h1>
   <h2>練習用にとにかくなんでも突っ込みます</h2>
-　<img src="image/mainpage.jpg" 
-   style="width:40%; alt="練習場" />
-  </div>
-<div id="count">
-<img src="http://www7b.biglobe.ne.jp/vpack/Count.cgi?dd=C|md=5|srgb=ffffff|prgb=00ff00|chcolor=Y|frgb=ff00ff|ft=6|tr=N">
+  <img src="image/mainpage.jpg" style="width:40%;" alt="練習場">
 </div>
+
+<!-- GitHub Pages で動くアクセスカウンター -->
+<div id="count">
+  <p>あなたは <span id="counter">…</span> 人目の訪問者です</p>
+</div>
+
+<script>
+// countapi.xyz を使った簡易カウンター
+fetch('https://api.countapi.xyz/hit/johnandhacchi.github.io/visits')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('counter').innerText = data.value;
+  });
+</script>
+
 <div id="menu">
 <ol>
 <li>
-<a href="dialogo/dialogomenu.html">スペイン語道場
-【Vamos a practicar español】</a>
-<br>
+<a href="dialogo/dialogomenu.html">スペイン語道場【Vamos a practicar español】</a>
 <p>ダイアログ、日記、質問などでスペイン語の練習をしよう！</p>
 </li>
+
 <li>
-<a href="2024australia/menu.html">２０２４年９月、オーストラリア旅行日記
-【El diario de Australia】</a>
-<br>
+<a href="2024australia/menu.html">２０２４年９月、オーストラリア旅行日記【El diario de Australia】</a>
 <p>１０日間の旅行は久しぶり！</p>
 </li>
+
 <li>
-<a href="2023mongolia/menu.html">２０２３年９月、モンゴル旅行日記
-【El diario de Mongolia】</a>
-<br>
+<a href="2023mongolia/menu.html">２０２３年９月、モンゴル旅行日記【El diario de Mongolia】</a>
 <p>ようやく海外旅行に！まずは近場</p>
 </li>
+
 <li>
-<a href="2019spain/menu.html">２０１９年秋、スペイン旅行日記
-【El diario de España】</a>
-<br>
-<p>スペイン語初級者の我々が、勉強のために書いた日記です。
-間違いだらけでごめんなさい。</p>
+<a href="2019spain/menu.html">２０１９年秋、スペイン旅行日記【El diario de España】</a>
+<p>スペイン語初級者の我々が、勉強のために書いた日記です。</p>
 </li>
+
 <li>
 <a href="LillyEspanol/LillyEspanol.html">Lilly Español</a>
-<br>
 <p>Spanish learning</p>
 </li>
+
 <li>
 <a href="johnsgallery/menujp.html">Ｊｏｈｎ’ｓ　Ｇａｌｌｅｒｙ</a>
-<br>
 <p>開けてみてのお楽しみ</p>
 </li>
+
 <li>
 <a href="tango/tangomenu.html">【参考資料】スペイン語単語帳</a>
-<br>
 <p>覚えておきたい基本的な単語です。</p>
 </li>
+
 <li>
 <a href="space/menu.html">Stargazing & astrophotography</a>
-<br>
 <p>夜空を見上げてみましょう！</p>
 </li>
+
 </ol>
 </div>
+
 </body>
 </html>
