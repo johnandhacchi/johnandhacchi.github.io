@@ -38,13 +38,18 @@ ul li, ol li {
   <img src="image/mainpage.jpg" style="width:40%;" alt="練習場">
 </div>
 
-<!-- GitHub Pages で動くアクセスカウンター -->
 <div id="count">
- 
-</div>
+  <script>
+    // ローカルファイルかどうか判定
+    const isLocal = location.protocol === "file:";
 
-<div id="count">
-  <img src="https://hits.sh/johnandhacchi.github.io.svg?style=for-the-badge&label=VISITORS&color=green" alt="visitor counter">
+    if (!isLocal) {
+      // ローカルじゃないときだけ hits.sh を読み込む
+      document.write(`
+        <img src="https://hits.sh/johnandhacchi.github.io.svg?style=for-the-badge&label=VISITORS&color=green">
+      `);
+    }
+  </script>
 </div>
 
 <div id="menu">
