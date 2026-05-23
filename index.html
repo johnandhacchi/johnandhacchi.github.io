@@ -44,13 +44,9 @@ ul li, ol li {
   <p>あなたは <span id="counter">…</span> 人目の訪問者です</p>
 </div>
 
-<script>
-fetch('https://api.countapi.xyz/hit/hacchi-counter-20240523/visits')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('counter').innerText = data.value;
-  });
-</script>
+<div id="count">
+  <img src="https://hits.sh/johnandhacchi.github.io.svg?style=for-the-badge&label=VISITORS&color=green" alt="visitor counter">
+</div>
 
 <div id="menu">
 <ol>
