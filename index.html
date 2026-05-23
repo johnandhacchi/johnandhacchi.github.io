@@ -45,8 +45,7 @@ ul li, ol li {
 </div>
 
 <script>
-// countapi.xyz を使った簡易カウンター
-fetch('https://api.countapi.xyz/hit/johnandhacchi.github.io/homepage')
+fetch('https://api.countapi.xyz/hit/johnandhacchi.github.io/visits20240523')
   .then(response => response.json())
   .then(data => {
     document.getElementById('counter').innerText = data.value;
