@@ -39,18 +39,25 @@ ul li, ol li {
 </div>
 
 <div id="count">
+  <img id="counterImg"
+    alt="visitor counter"
+    style="display:none;">
+</div>
+
   <script>
     // ローカルファイルかどうか判定
     const isLocal = location.protocol === "file:";
 
     if (!isLocal) {
       // ローカルじゃないときだけ hits.sh を読み込む
-      document.write(`
-        <img src="https://hits.sh/johnandhacchi.github.io.svg?style=for-the-badge&label=VISITORS&color=green">
-      `);
+      const img = 
+        document.getElementById("counterImg");
+      img src="https://hits.sh/johnandhacchi.github.io.svg?style=for-the-badge&label=VISITORS&color=green";
+      img.style.display = 
+        "inline";
     }
   </script>
-</div>
+
 
 <div id="menu">
 <ol>
