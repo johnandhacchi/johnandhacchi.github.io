@@ -45,7 +45,8 @@ ul li, ol li {
 </div>
   <script>
     // ローカルファイルかどうか判定
-    const isLocal = location.protocol === "file:";
+    const isLocal = 
+      location.protocol === "file:";
 
     if (!isLocal) {
       // ローカルじゃないときだけ hits.sh を読み込む
